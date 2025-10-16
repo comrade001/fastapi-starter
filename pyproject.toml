@@ -1,0 +1,45 @@
+[project]
+name = "hello-python"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Abraham Solis",email = "abraham@advisorinternetmarketing.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest (>=8.4.2,<9.0.0)",
+    "fastapi (>=0.118.0,<0.119.0)",
+    "uvicorn (>=0.37.0,<0.38.0)",
+    "starlette (>=0.48.0,<0.49.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.13.1,<0.14.0)",
+    "black (>=25.9.0,<26.0.0)",
+    "mypy (>=1.18.2,<2.0.0)",
+    "pre-commit (>=4.3.0,<5.0.0)",
+    "pytest-asyncio (>=1.2.0,<2.0.0)",
+    "pytest-cov (>=7.0.0,<8.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "anyio (>=4.11.0,<5.0.0)"
+]
+
+[tool.poetry]
+name = "hello-python"
+version = "0.1.0"
+description = ""
+authors = ["Abraham Solis <you@example.com>"]
+package-mode = false
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
+asyncio_mode = "auto"

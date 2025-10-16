@@ -1,0 +1,55 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+env.bak/
+.Python
+
+# Poetry
+poetry.lock
+# (solo si quieres que los entornos lo resuelvan dinámicamente;
+# si es repositorio de app real, sí debes incluir el lock)
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test artifacts
+.coverage
+htmlcov/
+.cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Ruff / Black
+.ruff_cache/
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
